@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+@model List<Resposta>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASP</title>
+    </head>
+    <body>
+        <h1>Respostas</h1>
+    @{
+        for(int i = 0; i < Model.Count; i++)
+        {
+            <p>Nome: @Model[i].Nome <br>Email: @Model[i].Email <br>Resposta: @Model[i].Opcao</p>
+            <p>--------------------------</p>
+        }
+        }
+    </body>
+</html>
